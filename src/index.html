@@ -1,0 +1,150 @@
+<%= require('html-loader?{"sources":false}!@/include/header.html').default %>
+<div class="app__panel app-panel">
+  <button class="app-panel__item js-app-panel__item" data-ajax="ajax/ajax-body-2.html">
+    <svg class="icon icon-menu-1"><use xlink:href="#icon-menu-1"></use></svg>
+  </button>
+  <button class="app-panel__item js-app-panel__item" data-ajax="ajax/ajax-body-3.html">
+    <svg class="icon icon-menu-2"><use xlink:href="#icon-menu-2"></use></svg>
+  </button>
+  <button class="app-panel__item js-app-panel__item" data-ajax="ajax/ajax-body-4.html">
+    <svg class="icon icon-menu-3"><use xlink:href="#icon-menu-3"></use></svg>
+  </button>
+  <button class="app-panel__item is-active js-app-panel__item" data-ajax="ajax/ajax-body-1.html">
+    <svg class="icon icon-menu-4"><use xlink:href="#icon-menu-4"></use></svg>
+  </button>
+</div>
+<div class="app__main app-main">
+  <div class="js-ajax-body">
+    <div class="app-main__tabs app__main-tabs app-tabs js-app-tabs" data-complete="true">
+      <div class="app-tabs__links">
+        <div class="app-tabs__link is-active js-app-tabs__link" data-target="#tab-1"><span>Основная информация</span></div>
+        <div class="app-tabs__link js-app-tabs__link" data-target="#tab-2"><span>Настройки формирования окон</span></div>
+      </div>
+      <div class="app-tabs__items">
+        <div class="app-tabs__item" id="tab-1">
+          <div class="app-main__body">
+            <div class="app-main__item">
+              <div class="app-main__item-head">
+                <div class="app-main__item-name">Адрес</div>
+              </div>
+              <div class="app-main__item-body">
+                108830 г. Москва,пос ЛМС Центральный пруд, р-н больницы 55.31437.185
+              </div>
+            </div>
+            <div class="app-main__item">
+              <div class="app-main__item-head">
+                <div class="app-main__item-name">Родительское отделение</div>
+                <div class="app-checkbox">
+                  <input class="app-checkbox__input" type="checkbox" id="checkbox-1">
+                  <label class="app-checkbox__label app-checkbox__label--text-left" for="checkbox-1"><span></span>Разрешить родительскому отделению вносить изменения в расписание</label>
+                </div>
+              </div>
+              <div class="app-main__item-body">
+                Главное отделение ГИМС МЧС России по Московской области
+              </div>
+            </div>
+            <div class="app-main__item">
+              <div class="app-main__item-head">
+                <div class="app-main__item-name">Дочерние отделения</div>
+              </div>
+              <div class="app-main__item-body">
+                <div class="app-search">
+                  <div class="app-search__form">
+                    <form action="">
+                      <input type="text" class="app-search__query" placeholder="Введите название дочернего подразделения" />
+                      <button type="submit" class="app-search__submit">
+                        <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
+                      </button>
+                    </form>
+                  </div>
+                  <div class="app-search__results">
+                    <div class="app-search__items js-custom-scroll">
+                      <a href="#" class="app-search__item">Восточное отделение Центра ГИМС  Главного управления МЧС России по Московской области</a>
+                      <a href="#" class="app-search__item">Западное отделение Центра ГИМС (управление) Главного управления МЧС России по Московской области</a>
+                      <a href="#" class="app-search__item">Южное отделение Центра ГИМС Главного управления МЧС России по Московской области</a>
+                      <a href="#" class="app-search__item">Центральное отделение Центра ГИМС (управление) Главного управления МЧС России по Московской области</a>
+                      <a href="#" class="app-search__item">Восточное отделение Центра ГИМС  Главного управления МЧС России по Московской области</a>
+                      <a href="#" class="app-search__item">Восточное отделение Центра ГИМС  Главного управления МЧС России по Московской области</a>
+                      <a href="#" class="app-search__item">Западное отделение Центра ГИМС (управление) Главного управления МЧС России по Московской области</a>
+                      <a href="#" class="app-search__item">Южное отделение Центра ГИМС Главного управления МЧС России по Московской области</a>
+                      <a href="#" class="app-search__item">Центральное отделение Центра ГИМС (управление) Главного управления МЧС России по Московской области</a>
+                      <a href="#" class="app-search__item">Восточное отделение Центра ГИМС  Главного управления МЧС России по Московской области</a>
+                      <a href="#" class="app-search__item">Восточное отделение Центра ГИМС  Главного управления МЧС России по Московской области</a>
+                      <a href="#" class="app-search__item">Западное отделение Центра ГИМС (управление) Главного управления МЧС России по Московской области</a>
+                      <a href="#" class="app-search__item">Южное отделение Центра ГИМС Главного управления МЧС России по Московской области</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="app-tabs__item" id="tab-2" style="display: none;">
+          <div class="app-main__body">
+            <div class="app-main__item">
+              <div class="app-main__item-head">
+                <div class="app-main__item-name">Адрес</div>
+              </div>
+              <div class="app-main__item-body">
+                108830 г. Москва,пос ЛМС Центральный пруд, р-н больницы 55.31437.185
+              </div>
+            </div>
+            <div class="app-main__item">
+              <div class="app-main__item-head">
+                <div class="app-main__item-name">Родительское отделение</div>
+                <div class="app-checkbox">
+                  <input class="app-checkbox__input" type="checkbox" id="checkbox-1">
+                  <label class="app-checkbox__label app-checkbox__label--text-left" for="checkbox-1"><span></span>Разрешить родительскому отделению вносить изменения в расписание</label>
+                </div>
+              </div>
+              <div class="app-main__item-body">
+                Главное отделение ГИМС МЧС России по Московской области
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="app__notice app-notice">
+  <div class="app-notice__head">
+    Уведомления
+  </div>
+  <div class="app-notice__body">
+    <div class="app-notice__items">
+      <div class="app-notice__item">
+        <div class="app-notice__item-text">Внесены изменения в расписание четверга </div>
+        <div class="app-notice__item-date">
+          20.11.2020 15:32
+        </div>
+      </div>
+      <div class="app-notice__item">
+        <div class="app-notice__item-text">Внесены изменения в формирование окон</div>
+        <div class="app-notice__item-date">
+          20.11.2020 11:28
+        </div>
+      </div>
+      <div class="app-notice__item">
+        <div class="app-notice__item-text">Внесены изменения в формирование окон Западного отделения Центра ГИМС (управление) Главного управления МЧС России по Московской области</div>
+        <div class="app-notice__item-date">
+          12.11.2020 10:22
+        </div>
+      </div>
+      <div class="app-notice__item">
+        <div class="app-notice__item-text">Внесены изменения в формирование окон</div>
+        <div class="app-notice__item-date">
+          25.10.2020 09:48
+        </div>
+      </div>
+      <div class="app-notice__item">
+        <div class="app-notice__item-text">Внесены изменения в расписание среды </div>
+        <div class="app-notice__item-date">
+          21.10.2020 10:15
+        </div>
+      </div>
+    </div>
+    <a href="" class="app-notice__more">Ещё уведомления</a>
+  </div>
+</div>
+<%= require('html-loader?{"sources":false}!@/include/footer.html').default %>
